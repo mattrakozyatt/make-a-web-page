@@ -1,0 +1,264 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Stage 1:Make Your Own Webpage</title>		
+		<link rel="stylesheet" type="text/css" href="stage1.css">
+		</head>
+<body>
+  <h1>Matt's Notes<br>Stage 1:Make Your Own Webpage</h1>
+  <div class="section">
+    <h2><br>Lesson 1: The Basics of the Web and HTML</h2>
+ 
+    <div class="concept">
+      <div class="title">
+        World Wide Web and HTML
+      </div>
+      <div class="concept">
+        <p>
+          The Web/Internet is the world's largest computer network.
+        </p>
+        <p>
+          Major pieces of the Web: user/computer+browser --- Internet --- servers
+        </p>
+		
+        <p>
+          A Web Page is a text document written in a language called HTML.  Web browsers read these HTML documents, and then interpret and display them.
+        </p>
+		</div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        HTML
+      </div>
+      <div class="concept">
+        <p>
+          <b>HTML</b> - HyperText Markup Language is a system for tagging text files to achieve font, color, graphic, and hyperlink effects on Web pages.  HTML is the main document type on the Web.
+        </p>
+        <p>  
+          HTML is the language of the Web, and it controls the "structure" of a Web page.
+        </p>
+        <p>Example of a HTML document:
+        <img src="corewebpage.png" alt="corewebpage">
+        </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        CSS
+      </div>
+      <div class="concept">
+        <p>
+          <b>Cascading Style Sheets (CSS)</b> - Allow a programmer to us a specific syntax and rules to change how elements look on a page.  CSS controls the "style" of a page (how it looks).
+        </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        Basic HTML Vocabulary
+      </div>
+      <div class="concept">
+        <p>  
+          <b>Tag:</b> An HTML tag is always contained within angled brackets. Most tags have an opening tag (<img src="openpar.png" alt="openpar">) and a closing tag, (<img src="closepar.png" alt="closepar">). <em>Void</em> tags do not require a closing tag, such as the line break tag <img src="break.png" alt="break">.
+        </p>
+        <p>
+          <b>Element:</b> An HTML element refers to everything within a set of opening and closing tags.
+         </p>
+         <p> <B>Attribute:</B> This is a property of an HTML element. For example, to set the "href" attribute of an anchor tag to the Udacity URL, you would code:<br><img src="imageexample.png" alt="imageexample">
+        </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        Inline vs Block Elements
+      </div>
+      <div class="concept">
+        <p>
+          In-line elements take up only as much width as needed, and do not force new lines.  Block elements form an "invisible box" around the content inside of them.
+        </p>
+        <p>
+        	Examples of in-line elements are <em>span</em> and <em>br</em>.
+        </p>
+        <p>
+        	Examples of block elements are <em>p</em> and <em>div</em>.
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><br>Lesson 2: Creating a Structured Document with HTML</h3>
+
+    <div class="concept">
+      <div class="title">
+        DOM - The "tree" structure of HTML
+      </div>
+      <div class="concept">
+        <p>
+          The browser turns tags into elements that form the tree, because of the Document Object Model (DOM).
+        </p>
+        <p>
+          When programmers talk about the "DOM" (Document Object Model) they are talking about the tree-like structure of a page.
+        </p>
+        <p>
+        	The Document Object Model (DOM) is a convention for representing and interacting with objects in HTML.  The nodes of HTML are organized in a tree structure, called the DOM tree.
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        HTML boxes
+      </div>
+      <div class="concept">
+        <p>
+          Every element on a page is a rectangular box and may have width, height, padding, borders, and margins.  Boxes are create with <em>div</em> tags.
+        </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        The box model in CSS
+      </div>
+      <div class="concept">
+        <p>
+          <b>Content</b> is the image or text.
+          <br><b>Padding</b> clears an area around the content.
+          <br><b>Border</b> goes around the padding and content.
+          <br><b>Margin</b> clears an area around the boarder, padding, and content.
+        </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        Dealing with sizing issues in CSS
+      </div>
+      <div class="concept">
+        <p>
+          There are two techniques that can be used to help deal with sizing issues:
+          <br>1. Set sizes in terms of percentages rather than pixels
+          <br>2. Set the box-sizing attribute to border-box for every element in CSS
+          <br>Example in CSS:
+          <div class="spaces">*{
+          </div>
+          <div class="spaces">box-sizing: border-box;
+          </div>
+          <div class="spaces">}
+          </div>
+        <p>
+          Different browsers work slightly differently.  Sometimes this causes different browsers to display the same code differently.  
+        </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        Placing boxes next to each other
+      </div>
+      <div class="concept">
+          <br>
+            Both boxes need to be in the same <em>div</em> element
+          <br>
+          <br>
+            Example:
+          <br>
+            In HTML -
+          <br>
+		      <img src="multibox.png" alt="multibox">
+		      <br>
+		      <br>
+		        Then apply the <em>display: flex;</em> option in CSS -
+		      <div class="spaces">.app {
+            </div>
+          <div class="spaces">display: flex;
+            </div>
+          <div class="spaces">}
+            </div>
+            <p>
+            </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        Placing an image in a page
+      </div>
+      <div class="concept">
+        <p>
+          Add the image to a to a <em>div</em> element with an <em>img</em> tag (which is a void tag).
+          <br>
+          Example:
+          <br>
+          <img src="imageexample.png" alt="imageexample">
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><br>Other Notes and Concepts</h3>
+
+    <div class="concept">
+      <div class="title">
+        Learning to code is hard
+      </div>
+      <div class="concept">
+        <p>
+          You will feel confusion and frustration. 
+        </p>
+        <b>The four stages from Novice to Expert:</b>
+        <ol>
+          <li>Ignorance - You don't yet know it exists (Novice)
+          <li>Awareness - Finding out about a thing
+          <li>Ability - Practicing
+          <li>Fluency - Doing a thing effortlessly (Expert)
+        </ol>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        Why Computers are Stupid
+      </div>
+      <div class="concept">
+        <p>
+          Computers are stupid because they execute commands literally, so a programmer cannot be ambiguous when coding.
+        </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="title">
+        The Importance of Avoiding Repetition
+      </div>
+      <div class="concept">
+        <p>
+          A programmer could apply style parameters to each element in HTML, which could lead to repetition of code.  By using Cascading Style Sheets (CSS) a programmer can apply style parameters to classes, then associate elements to classes.  This eliminates the repetition of style coding, thus allowing to the pages to load quicker.
+        </p>
+      </div>
+    </div>
+
+	<div class="concept">
+      <div class="title">
+        Tools for HTML/CSS editing
+      </div>
+      <div class="concept">
+        <p>
+          <b>Scratchpad.io</b> - basic - instantaneous results
+		  <br><b>Codepen</b> - slightly powerful - great for sharing - near instantaneous results
+		  <br><b>Sublime Text 2</b> - Powerful - requires refresh to see results
+		  <br><b>Udacity Playground</b>
+ 		  <br><b>HTML validation</b>: <a href= "http://validator.w3.org/#validate_by_input">http://validator.w3.org/#validate_by_input</a>
+ 		  <br><b>CSS validation</b>: <a href= "https://jigsaw.w3.org/css-validator/#validate_by_input">https://jigsaw.w3.org/css-validator/#validate_by_input</a>
+        </p>
+      </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
